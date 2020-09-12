@@ -17,13 +17,7 @@ end
 
 data = request("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=","uiNznqVzPBBnJls8bRu7VS6qodPlqwFtH0GuJw9a")
 
-# print data["photos"].to_a
-#No funciona con variables,definir directamente el contenido a los argumentos
-# variable fotos .class hash
 
-#Metodo 2
-
-# print data.keys = ["Photos"], 
 
 # new_data=[]
 # data["photos"].each do |data| 
@@ -94,6 +88,7 @@ camera_navcam["photos"].each do |camera_navcam|
 end
 
 navcam = navcam.length # 10 NAVCAM
+#pendiente la funsion 
 
 total_ = navcam + chemcam + mast + rhaz + fhaz
 puts total_

@@ -57,9 +57,8 @@ camera_fhaz["photos"].each do |camera_fhaz|
     fhaz << camera_fhaz["id"] 
 end
 
-name = ["FHAZ"]
 fhaz = fhaz.length # Fhaz = 2 
-final = name.zip(fhaz).to_a
+# print fhaz
 
 camera_rhaz = request('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=rhaz&api_key=','uiNznqVzPBBnJls8bRu7VS6qodPlqwFtH0GuJw9a')
 rhaz = []

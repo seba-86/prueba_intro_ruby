@@ -49,12 +49,12 @@ return li
 end
 
 
-#Pregunta bonus 
+#Pregunta bonus / # Como cantidad de id hay cantidad de fotos si preguntamos por camaras
 
 camera_fhaz = request('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=','uiNznqVzPBBnJls8bRu7VS6qodPlqwFtH0GuJw9a')
 fhaz = []
 camera_fhaz["photos"].each do |camera_fhaz|
-    fhaz << camera_fhaz["id"] # Como cantidad de id hay cantidad de fotos si preguntamos por camaras, generamos array y convertimos a hash con .zip?
+    fhaz << camera_fhaz["id"] 
 end
 
 fhaz = fhaz.length # Fhaz = 2 
@@ -95,7 +95,8 @@ end
 
 navcam = navcam.length # 10 NAVCAM
 
-
+total_ = navcam + chemcam + mast + rhaz + fhaz
+puts total_
 
 # rovers1 = curiosity ( fhaz, rhaz, mastil, chemcam, mahli, mardi, navcam)
 # rovers2 = opportunity (fhaz, rhaz, navcam, pancam,minitos)

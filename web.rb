@@ -137,8 +137,8 @@ end
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-link text-white" href="#contact">CONTACTO</a>
+                    
+                        
                     </div>
                 </div>
             </div>

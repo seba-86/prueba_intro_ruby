@@ -1,0 +1,121 @@
+def head
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastian Venegas">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>My Title</title>
+    <!--Bootstrap 4.5.0-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--Font Awe-->
+    <script src="https://kit.fontawesome.com/6a3cb15231.js" crossorigin="anonymous"></script>
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+end
+    def nav
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light py-2 ">
+        <div class="container">
+            <a class="navbar-brand py-0" href="#" style="color: white; font-weight: 700;">MARS ROVERS</a>
+            <button class="navbar-toggler change" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link text-white" href="#contact">CONTACTO</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    end
+
+    def header
+    <header>
+
+        <div class="container-fluid px-0">
+            <figure>
+                <img src="./assets/img/header-img.jpg" alt="bg-hero" class="img-fluid">
+            </figure>
+        </div>
+    </header>
+    end
+    
+    def section
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <hr class="d-none d-sm-block d-md-none d-block d-sm-none">
+                    <figure>
+                        <img class="w-100 pb-0" src="./assets/img/bg-hero.jpg" alt="ROVERS">
+                    </figure>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <p class="text-md-center pt-5 mt-5 text-white ">Un Mars rover es un vehículo motorizado que se
+                        desplaza por la superficie de Marte a su llegada. Estos vehículos tienen varias ventajas
+                        respecto los módulos de aterrizaje estacionarios: son capaces de examinar áreas de territorio
+                        más amplio, pueden ser dirigidos a zonas con interés científico, pueden situarse en posiciones
+                        donde reciben luz solar durante los meses de invierno y son capaces de obtener conocimiento del
+                        entorno para ser controlados de forma remota.
+                    </p>
+                    <hr style="border: solid 1px white;">
+                    <p class="porciones-pizza mb-4"> CURIOSITY - OPPORTUNITY - SPIRIT</p>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    end
+
+    def foo
+    <!--JQuery 3.5.1 uncompressed-->
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <!--Popper.js 1.16.0-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!--Bootstrap JS 4.5.0-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!--My script-->
+    <script src=""></script>
+
+</body>
+
+<html>
+end
+
+
+i = 0 
+number = ARGV[0].to_i
+
+print ("<ul>\n")
+
+while i < number
+    i +=1
+    print ("\s <li>#{i}</li>\n")
+    
+end
+print ("</ul>\n")
